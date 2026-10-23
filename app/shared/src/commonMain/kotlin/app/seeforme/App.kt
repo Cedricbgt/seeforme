@@ -18,6 +18,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import app.seeforme.ui.theme.SeeForMeTheme
 import org.jetbrains.compose.resources.painterResource
 import seeforme.app.shared.generated.resources.Res
 import seeforme.app.shared.generated.resources.compose_multiplatform
@@ -25,7 +26,7 @@ import seeforme.app.shared.generated.resources.compose_multiplatform
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
+    SeeForMeTheme {
         var showContent by remember { mutableStateOf(false) }
         Column(
             modifier =
