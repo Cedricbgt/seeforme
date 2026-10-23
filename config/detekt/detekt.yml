@@ -1,0 +1,30 @@
+naming:
+  MatchingDeclarationName:
+    # expect/actual files (Platform.android.kt...) hold platform-prefixed declarations.
+    excludes:
+      - '**/*.android.kt'
+      - '**/*.ios.kt'
+      - '**/*.jvm.kt'
+  FunctionNaming:
+    ignoreAnnotated:
+      - Composable
+  TopLevelPropertyNaming:
+    constantPattern: '[A-Z][A-Za-z0-9]*'
+
+complexity:
+  LongParameterList:
+    ignoreAnnotated:
+      - Composable
+  LongMethod:
+    ignoreAnnotated:
+      - Composable
+
+style:
+  MagicNumber:
+    excludes:
+      - '**/ui/theme/**'
+      - '**/test/**'
+      - '**/*Test/**'
+  UnusedPrivateFunction:
+    ignoreAnnotated:
+      - Preview
