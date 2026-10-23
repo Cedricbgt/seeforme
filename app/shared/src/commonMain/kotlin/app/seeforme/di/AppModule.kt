@@ -21,4 +21,4 @@ val viewModelModule =
         viewModelOf(::SettingsViewModel)
     }
 
-val appModules = listOf(viewModelModule)
+val appModules = listOf(platformModule, viewModelModule)
